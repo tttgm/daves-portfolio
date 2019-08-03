@@ -1,146 +1,201 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
-body {
-    color: #666666;
-    background-color: #f9f8f6;
+body, html {
+    padding: 0;
+    margin: 0;
     font-family: Arial, Verdana, sans-serif;
-    line-height: 1.4em;
-    margin: 0px;
+    height: 100%;
 }
-.wrapper {
-    width: 940px;
-    margin: 15px auto 15px auto;
-    border: 2px solid #ff0000;
-    background-color: #ffffff;
-}
+
 header {
-    color: 000000;
-    height: 160px;
-    /*background-image: url(path);*/
-}
-h1 {
-    width: 940px;
-    height: 130px;
-    margin: 0px;
-}
-nav, footer {
-    clear: both;
-    color: #ffffff;
-    background-color: #aeaca8;
-    height: 30px;
-}
-nav ul {
-    margin: 0px;
-    padding: 5px 0px 5px 30px;
-}
-nav li {
-    display: inline;
-    margin-right: 40px;
-}
-nav li a {
-    color: #ffffff;
-}
-nav li a:hover, nav li a.current {
-    color: #000000;
-}
-selection.courses {
-    float: left;
-    width: 660px;
-    border-right: 1px solid #eeeeee;
-}
-article {
-    clear: both;
-    overflow: auto;
-    width: 100%;
+    text-align: center;
 }
 
-button {
-  background-color: #FFF;
-  border: 1px solid #000000;
-}
-
-button:hover {
-  background-color: #de6581;
-  color: #FFF;
-}
-
-hgroup {
-    margin-top: 40px;
-}
-figure {
-    float: left;
-    width: 290px;
-    height: 220px;
-    padding: 5px;
-    margin: 20px;
-    border: 1px solid #eeeeee;
-}
-img {
-    width: 240px;
-    height: 200px;
-}
-figcaption {
-    font-size: 90%;
-    text-align: left;
-}
-a {
-    color: #de6581;
-    text-decoration: none;
-}
-h1, h2, h3 {
-    font-weight: normal;
-}
-h2 {
-    margin: 10px 0px 5px 0px;
-    padding: 0px;
-}
-h3 {
-    margin: 0px 0px 10px 0px;
-    color: #de6581;
-}
 footer {
-    font-size: 75%;
-    padding: 7px 0px 0px 20px;
+    text-align: center;
+    font-style: normal;
+    /*background-color: grey;*/
+    border-top: 3px solid green;
+    margin: 0 14rem;
+    padding: 5px 0;
 }
 
-.social-icon {
-    color: #fff;
-}
-ul.social-icons {
+h1{
+    font-family: Bookman, sans-serif;
+    font-size: 36pt;
+    font-weight: bold;
+    margin-bottom: 0;
     margin-top: 10px;
 }
-.social-icons li {
-    vertical-align: top;
-    display: inline;
-    height: 100px;
-}
-.social-icons a {
-    color: #fff;
-    text-decoration: none;
-}
-.fa-facebook {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-facebook:hover {
-    background-color: #3d5b99;
-}
-.fa-twitter {
-    padding:10px 12px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-twitter:hover {
-    background-color: #00aced;
+
+h2{
+    color: green;
+    font-size: 2em;
 }
 
+a {
+    color: #7A7C80;
+    text-decoration: none;
+}
+img {
+    width: 280px;
+    height: 220px;
+    /*filter: grayscale(100%);*/
+}
+
+/*The "splash" title page*/
+.splash {
+    color: #fff;
+    background-image: url("../images/test-cover.jpg");
+    height: 90%;
+    background-size: cover;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.splash-nav {
+    display: inline-block;
+}
+
+.splash-text {
+    padding: 20% 0;
+}
+
+.splash-nav a {
+  font-size: 1.2em;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 10px;
+  text-decoration: none;
+}
+
+.splash-nav a:hover {
+  background-color: #eee;
+  color: green;
+  transition: 0.3s;
+}
+
+.sub-title {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: italic;
+}
+
+#about {
+    /*background-color: grey;*/
+    color: #7A7C80;
+    text-align: left;
+    font-size: 14pt;
+    height: auto;
+    margin: 0 14rem;
+    padding-bottom: 20px;
+    border-bottom: 3px solid green;
+}
+
+#about img {
+    float: right;
+    margin-left: 20px;
+    height: 100%;
+    width: 40%;
+    filter: sepia(50%)
+}
+
+#about p {
+    margin-right: 50%;
+}
+
+.quote-block {
+    font-size: 32pt;
+}
+
+#testimonials {
+    /*background-color: grey;*/
+    color: #7A7C80;
+    text-align: left;
+    font-size: 14pt;
+    height: auto;
+    margin: 0 14rem;
+    padding: 20px 0;
+    border-top: 3px solid green;
+}
+
+#testimonials p {
+    margin: 2rem 4rem;
+    line-height: 1.4em;
+}
+
+ /*article-page 1*/
+.organisation {
+    float: right;
+    width: 35%;
+    padding-top: 20vh;
+    text-align: center;
+    height: 100vh;
+}
+
+.top-nav {
+  /*background-color: grey;*/
+  overflow: hidden;
+  margin: 0 14rem;
+  border-style: solid;
+  border-color: green;
+  border-width: 3px 0;
+}
+
+.top-nav a {
+  /*float: left;*/
+  display: inline-block;
+  text-align: center;
+  padding: 20px 10px;
+  text-decoration: none;
+}
+
+.top-nav a:hover {
+  background-color: #eee;
+  color: green;
+  transition: 0.3s;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding: 2rem 10rem;
+  grid-gap: 1rem;
+}
+
+.grid-item {
+    padding: 0 20px 10px 20px;
+    background-color: #eee;
+}
+
+.grid-item img {
+  width:100%;
+  height:100%;
+}
+
+/*Set the fonts for inside each article box*/
+.article-title {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 18pt;
+    font-style: bolder;
+}
+
+article a {
+    font-size: 1em;
+    color: black
+}
+
+article a:hover {
+  background-color: #fff;
+  color: green;
+  transition: 0.3s;
+}
+
+.pub-title {
+    color: #545454;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 16pt;
+    font-style: italic;
+    font-weight: lighter;
+}
