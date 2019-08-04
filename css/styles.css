@@ -38,8 +38,9 @@ a {
 }
 
 ul {
-  font-size: 1.2rem;
-  list-style-type: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    list-style-type: none;
 }
 
 li {
@@ -163,10 +164,10 @@ ul a:hover {
 }
 
 .article-list {
-    /*background-color: grey;*/
-    /*margin: 0 14rem;*/
-    padding: 0 20rem;
-    /*padding-bottom: 20px;*/
+  display: grid;
+  grid-template-columns: repeat(1, minmax(320px, 1fr));
+  padding: 2rem 15rem;
+  grid-gap: 1rem;
 }
 
 .article-list article {
@@ -183,13 +184,17 @@ ul a:hover {
     margin-right: 20px;
 }
 
-.ways {
-    /*background-color: grey;*/
-    margin: 0 36% 50px 36%;
-    /*text-align: center;*/
+.ways-wrap {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
- /*article-page 1*/
+.ways {
+    /*background-color: grey;*/
+    text-align: left;
+    min-width: 320px;
+}
+
 .organisation {
     float: right;
     width: 35%;
@@ -255,6 +260,10 @@ article a:hover {
   background-color: #fff;
   color: green;
   transition: 0.3s;
+}
+
+article p {
+    overflow: hidden;
 }
 
 .pub-title {
