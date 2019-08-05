@@ -64,7 +64,7 @@ ul a:hover {
 
 #topline {
     padding-bottom: 20px;
-    min-height: 170px;
+    min-height: 165px;
 }
 
 #topline h1 {
@@ -123,7 +123,6 @@ ul a:hover {
     margin: 0 14rem;
     padding-bottom: 20px;
     border-bottom: 3px solid green;
-    /*overflow: hidden;*/
 }
 
 #about img {
