@@ -64,6 +64,11 @@ ul a:hover {
 
 #topline {
     padding-bottom: 20px;
+    min-height: 170px;
+}
+
+#topline h1 {
+    font-family: 'Red Hat Text', sans-serif;
 }
 
 #topline a:hover {
@@ -105,8 +110,8 @@ ul a:hover {
 }
 
 .sub-title {
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-style: italic;
+    font-family: 'Courgette', cursive;
+    font-size: 1.2rem;
 }
 
 #about {
@@ -138,6 +143,24 @@ ul a:hover {
     font-size: 32pt;
 }
 
+#contact {
+    color: #7A7C80;
+    text-align: left;
+    font-size: 14pt;
+    height: auto;
+    margin: 0 14rem;
+    padding-bottom: 7.5%;
+}
+
+#contact img {
+    float: right;
+    margin-left: 100px;
+    height: 100%;
+    width: 40%;
+    filter: sepia(50%);
+    object-fit: contain;
+}
+
 #testimonials {
     /*background-color: grey;*/
     color: #7A7C80;
@@ -150,6 +173,20 @@ ul a:hover {
 }
 
 #testimonials p {
+    margin: 2rem 4rem;
+    line-height: 1.4em;
+}
+
+#farm-testimonials {
+    /*background-color: grey;*/
+    color: #7A7C80;
+    text-align: left;
+    font-size: 14pt;
+    height: auto;
+    margin: 0 14rem;
+}
+
+#farm-testimonials p {
     margin: 2rem 4rem;
     line-height: 1.4em;
 }
@@ -216,7 +253,9 @@ ul a:hover {
   /*float: left;*/
   display: inline-block;
   text-align: center;
+  /*padding: 20px 10px;*/
   padding: 20px 10px;
+  margin: 0;
   text-decoration: none;
 }
 
@@ -224,6 +263,12 @@ ul a:hover {
   background-color: #eee;
   color: green;
   transition: 0.3s;
+}
+
+.top-nav .current {
+    color: white;
+    background-color: green;
+    opacity: 0.3;
 }
 
 .grid-container {
