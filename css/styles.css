@@ -178,7 +178,7 @@ ul a:hover {
 .article-list article {
     background-color: #eee;
     margin: 0 0 20px 0;
-    margin-right: 10px;
+    padding-right: 10px;
     overflow: hidden;
 }
 
@@ -235,11 +235,6 @@ ul a:hover {
     background-color: green;
     opacity: 0.3;
 }
-
-/*body .grid-container {
-  text-align: center;
-  
-}*/
 
 .grid-container {
   width: 80vw;
@@ -310,11 +305,15 @@ article p {
   }
 
   #about p {
-    padding: 0 10px;
+    margin: 0 10px;
   }
 
   .pg-title p {
-    padding: 0 10px;
+    margin: 0 10px;
+  }
+
+  .article-list article {
+    padding-left: 10px
   }
 }
 
@@ -337,10 +336,14 @@ and (max-device-width : 667px) {
   }
 
   #about p {
-    padding: 0 10px;
+    margin: 0 10px;
   }
 
   .pg-title p {
-    padding: 0 10px;
+    margin: 0 10px;
+  }
+  
+  .article-list article {
+    padding-left: 10px
   }
 }
