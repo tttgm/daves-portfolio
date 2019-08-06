@@ -178,12 +178,13 @@ ul a:hover {
 .article-list article {
     background-color: #eee;
     margin: 0 0 20px 0;
+    margin-right: 10px;
     overflow: hidden;
 }
 
 .article-list article img {
     float: left;
-    height: 150px;
+    height: auto;
     width: 180px;
     object-fit: contain;
     margin-right: 20px;
@@ -292,7 +293,7 @@ article p {
     font-weight: lighter;
 }
 
-/*For mobile phones: */
+/*For small browser windows */
 @media only screen and (max-width: 900px) {
    #about, .top-nav, header, footer, 
    .grid-container, .article-list, .pg-title, 
@@ -302,6 +303,18 @@ article p {
 
   #about {
     grid-template-columns: 100%;
+  }
+
+  #about img{
+    width: 100%;
+  }
+
+  #about p {
+    padding: 0 10px;
+  }
+
+  .pg-title p {
+    padding: 0 10px;
   }
 }
 
@@ -317,5 +330,17 @@ and (max-device-width : 667px) {
 
   #about {
     grid-template-columns: 100%;
+  }
+
+  #about img{
+    width: 100%;
+  }
+
+  #about p {
+    padding: 0 10px;
+  }
+
+  .pg-title p {
+    padding: 0 10px;
   }
 }
