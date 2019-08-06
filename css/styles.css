@@ -1,9 +1,10 @@
 
 body, html {
     padding: 0;
-    margin: 0;
+    margin: auto;
     font-family: Arial, Verdana, sans-serif;
     height: 100%;
+    width: 100%;
 }
 
 header {
@@ -13,9 +14,9 @@ header {
 footer {
     text-align: center;
     font-style: normal;
-    /*background-color: grey;*/
+    width: 70%;
+    margin: auto;    
     border-top: 3px solid green;
-    margin: 0 14rem;
     padding: 5px 0;
 }
 
@@ -44,7 +45,6 @@ ul {
 }
 
 li {
-  /*line-height: 2;*/
   margin: 15px 0;
 }
 
@@ -76,66 +76,30 @@ ul a:hover {
   transition: 0.3s;
 }
 
-/*The "splash" title page*/
-.splash {
-    color: #fff;
-    background-image: url("../images/test-cover.jpg");
-    height: 90%;
-    background-size: cover;
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-.splash-nav {
-    display: inline-block;
-}
-
-.splash-text {
-    padding: 20% 0;
-}
-
-.splash-nav a {
-  font-size: 1.2em;
-  color: #fff;
-  display: inline-block;
-  text-align: center;
-  padding: 20px 10px;
-  text-decoration: none;
-}
-
-.splash-nav a:hover {
-  background-color: #eee;
-  color: green;
-  transition: 0.3s;
-}
-
 .sub-title {
     font-family: 'Courgette', cursive;
     font-size: 1.2rem;
 }
 
 #about {
-    /*background-color: grey;*/
-    color: #7A7C80;
-    text-align: left;
-    font-size: 14pt;
-    height: auto;
-    margin: 0 14rem;
-    padding-bottom: 20px;
-    border-bottom: 3px solid green;
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 2rem 0;
+  grid-gap: 1.5rem;
+  color: #7A7C80;
+  text-align: left;
+  font-size: 14pt;
+  align-items: center;
+  border-bottom: 3px solid green;
 }
 
 #about img {
-    float: right;
-    margin-left: 20px;
-    height: 100%;
-    width: 40%;
-    filter: sepia(50%);
-    object-fit: contain;
-}
-
-#about p {
-    margin-right: 50%;
+  width: 95%;
+  height: 350px;
+  filter: sepia(50%);
+  object-fit: cover;
 }
 
 .quote-block {
@@ -143,67 +107,72 @@ ul a:hover {
 }
 
 #contact {
+    width: 70%;
+    margin: auto; 
     color: #7A7C80;
     text-align: left;
     font-size: 14pt;
     height: auto;
-    margin: 0 14rem;
     padding-bottom: 7.5%;
 }
 
 #contact img {
-    float: right;
-    margin-left: 100px;
-    height: 100%;
-    width: 40%;
-    filter: sepia(50%);
-    object-fit: contain;
+  float: right;
+  margin-left: 50px;
+  width: 40%;
+  height: 200px;
+  filter: sepia(50%);
+  object-fit: cover;
 }
 
 #testimonials {
-    /*background-color: grey;*/
+    width: 70%;
+    margin: auto;
     color: #7A7C80;
     text-align: left;
     font-size: 14pt;
     height: auto;
-    margin: 0 14rem;
     padding: 20px 0;
     border-top: 3px solid green;
 }
 
 #testimonials p {
-    margin: 2rem 4rem;
+    margin: 2rem 1rem;
     line-height: 1.4em;
 }
 
 #farm-testimonials {
-    /*background-color: grey;*/
+    width: 70%;
+    margin: auto; 
     color: #7A7C80;
     text-align: left;
     font-size: 14pt;
     height: auto;
-    margin: 0 14rem;
 }
 
 #farm-testimonials p {
-    margin: 2rem 4rem;
+    margin: 2rem 1rem;
     line-height: 1.4em;
 }
 
 .pg-title {
+    width: 70%;
+    margin: auto; 
     color: #7A7C80;
     text-align: center;
     font-size: 14pt;
     height: auto;
-    margin: 0 14rem;
     padding: 0 0 35px 0;
 }
 
 .article-list {
+  width: 65%;
+  margin: auto; 
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1fr));
-  padding: 2rem 15rem;
+  padding: 2rem 0;
   grid-gap: 1rem;
+
 }
 
 .article-list article {
@@ -226,7 +195,6 @@ ul a:hover {
 }
 
 .ways {
-    /*background-color: grey;*/
     text-align: left;
     min-width: 320px;
 }
@@ -236,25 +204,22 @@ ul a:hover {
     width: 35%;
     padding-top: 20vh;
     text-align: center;
-    height: 100vh;
 }
 
 .top-nav {
-  /*background-color: grey;*/
   overflow: hidden;
-  margin: 0 14rem;
+  margin: auto;
+  text-align: center;
+  width: 70%;
   border-style: solid;
   border-color: green;
   border-width: 3px 0;
 }
 
 .top-nav a {
-  /*float: left;*/
   display: inline-block;
   text-align: center;
-  /*padding: 20px 10px;*/
   padding: 20px 10px;
-  margin: 0;
   text-decoration: none;
 }
 
@@ -270,11 +235,18 @@ ul a:hover {
     opacity: 0.3;
 }
 
+/*body .grid-container {
+  text-align: center;
+  
+}*/
+
 .grid-container {
+  width: 80vw;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  padding: 2rem 10rem;
-  grid-gap: 1rem;
+  padding: 2rem 0;
+  grid-gap: 1.5rem;
 }
 
 .grid-item {
@@ -318,4 +290,17 @@ article p {
     font-size: 16pt;
     font-style: italic;
     font-weight: lighter;
+}
+
+/*For mobile phones: */
+@media only screen and (max-width: 900px) {
+   #about, .top-nav, header, footer, 
+   .grid-container, .article-list, .pg-title, 
+   #testimonials, #farm-testimonials {
+    width: 100%;
+  }
+
+  #about {
+    grid-template-columns: 100%;
+  }
 }
