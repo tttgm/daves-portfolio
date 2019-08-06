@@ -304,3 +304,18 @@ article p {
     grid-template-columns: 100%;
   }
 }
+
+/*For iphones 6,7, and 8*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+     #about, .top-nav, header, footer, 
+   .grid-container, .article-list, .pg-title, 
+   #testimonials, #farm-testimonials {
+    width: 100%;
+  }
+
+  #about {
+    grid-template-columns: 100%;
+  }
+}
