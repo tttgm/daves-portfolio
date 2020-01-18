@@ -1,45 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sustainable Food Trust</title>
+        <title>Contemporary Food Lab</title>
         <link href="css/styles.css" type="text/css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Courgette|Red+Hat+Text:700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     </head>
-    <body>
-        <header id="topline">
-            <h1>David McKenzie</h1>
-            <p class="sub-title">Freelance Food Writer & Farmhand</p>
-            <a href="https://twitter.com/eatsnleaves"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/eatsnleaves/"><i class="fab fa-instagram"></i></a>
-        </header>
-        <header>
-            <nav class="top-nav">
-                <a href="index.html">Home</a>
-                <a href="contemporary-food-lab.html">Contemporary Food Lab</a>
-                <a class="current" href="slow-food.html">Slow Food</a>
-                <a href="13-ways.html">13 Ways</a>
-                <a href="farmhand.html">Farmhand</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>
-        <section class="pg-title">
-            <h2>Sustainable Food Trust</h2>
-            <img src="images/slow-food.jpeg" alt="slow-food" />
-            <p>I am very passionate about food, it makes me happy. But many things about the world of food also make me sad: how it is produced, how it is treated. How it is used, how it is abused. Who gets access to it. And who doesn't.</p>
-            <p>But Slow Food is one organisation I have found that gives me hope and optimism. It has also opened up a whole network of inspiring people to me. People all around the world doing great things, in many different ways.</p>
-            <p>Please browse below some of the articles I have written for Slow Food International and the Slow Food Youth Network.</p>
-        </section>
-        <section class="article-list">
-            <article>
-                <img src="images/Seeds from Yam's garden (1).jpg"/> 
-                <a href="https://www.slowfood.com/safeguard-nepals-food-future/" class="article-title">A Living Seed Bank: One man's dream to safeguard Nepal's food future</a>
-                <p class="pub-title">Slow Food International</p>
-                <p>Traditionally, farmers in Nepal have grown an amazing array of food crops. But today they are dangerously reliant on an increasingly smaller range of monocrops. One man has a plan to help change that.</p>
-            </article>
-            <article>
-                <img src="images/orkney-grain.jpg"/>
-                <a href="https://www.fondazioneslowfood.com/en/orkney-bere-ancient-grain/" class="article-title">Orkney Bere: The Ancient Grain that Keeps on Giving</a>
-                <p class="pub-title">Slow Food International</p>
-                <p>The revival of Orkney bere, once banished from bannock recipes to the backbench behind modern barley, continues to go from strength to strength.</p>
-            </article>
