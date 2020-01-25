@@ -62,9 +62,15 @@ ul a:hover {
   transition: 0.3s;
 }
 
+img.resize {
+  max-width:50%;
+  max-height:50%;
+}
+
 #topline {
+    padding-top: 40px;
     padding-bottom: 20px;
-    min-height: 165px;
+    /* min-height: 165px; */
 }
 
 #topline h1 {
