@@ -62,11 +62,6 @@ ul a:hover {
   transition: 0.3s;
 }
 
-.title-name a {
-/*     color: #7A7C80; */
-    text-decoration: none;
-}
-
 img.resize {
   max-width:50%;
   max-height:50%;
