@@ -67,10 +67,15 @@ img.resize {
   max-height:50%;
 }
 
+#title-logo {
+  max-width: 100%;
+}
+
 #topline {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    /* min-height: 165px; */
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* min-height: 165px; */
 }
 
 #topline h1 {
