@@ -240,8 +240,9 @@ img.resize {
 
 .ways-item > p {
   color: var(--accent);
+  font-size: larger;
   background: #fff;
-  margin: 0 20px;
+  margin: 0 15px;
 }
 
 /* 13 Ways background images */
