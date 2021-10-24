@@ -77,6 +77,10 @@ img.resize {
   max-height:50%;
 }
 
+.img-sepia {
+  filter: sepia(50%);
+}
+
 #title-logo {
   max-width: 100%;
 }
@@ -210,6 +214,7 @@ img.resize {
     width: 180px;
     object-fit: contain;
     margin-right: 20px;
+    filter: drop-shadow(2px 2px 0px var(--accent));
 }
 
 .ways-wrap {
@@ -362,6 +367,7 @@ img.resize {
     height: 220px;
     width: 100%;
     object-fit: contain;
+    filter: drop-shadow(2px 2px 0px var(--accent));
 }
 
 /*Set the fonts for inside each article box*/
