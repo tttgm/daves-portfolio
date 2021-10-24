@@ -1,3 +1,6 @@
+/* import google fonts for the topline headers */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&family=Zilla+Slab+Highlight&display=swadisplay=swap');
+
 :root {
   --dark-text: #020f04;
   --dark-grey: #555a56;
@@ -97,7 +100,15 @@ img.resize {
 }
 
 #topline h1 {
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: 'Zilla Slab Highlight', Georgia, sans-serif;
+  color: var(--accent-dark);
+}
+
+#topline h3 {
+  font-family: 'Zen Old Mincho', Georgia, serif;
+  color: var(--dark-grey);
+  font-weight: normal;
+  margin: 5px 0;
 }
 
 #topline a:hover {
@@ -105,8 +116,12 @@ img.resize {
   transition: 0.3s;
 }
 
+.social-icons > a {
+  padding-right: 5px;
+}
+
 .sub-title {
-  font-family: 'Courgette', cursive;
+  font-family: 'Zen Old Mincho', Georgia, serif;
   font-size: 1.2rem;
 }
 
@@ -404,9 +419,7 @@ article p {
   color: var(--dark-grey);
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 16pt;
-  font-style: italic;
   font-weight: lighter;
 }
 
