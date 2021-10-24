@@ -7,51 +7,51 @@
 }
 
 body, html {
-    padding: 0;
-    margin: auto;
-    font-family: Helvetica, Arial, Verdana, sans-serif;
-    font-weight: 200;
-    height: 100%;
-    width: 100%;
+  padding: 0;
+  margin: auto;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 200;
+  height: 100%;
+  width: 100%;
 }
 
 header {
-    text-align: center;
+  text-align: left;
 }
 
 footer {
-    text-align: center;
-    font-style: normal;
-    width: 70%;
-    margin: auto;    
-    border-top: 1px solid var(--accent);
-    padding: 5px 0;
+  text-align: left;
+  font-style: normal;
+  width: 70%;
+  margin: auto;    
+  border-top: 1px solid var(--accent);
+  padding: 5px 0;
 }
 
-h1{
-    font-family: Bookman, sans-serif;
-    font-size: 36pt;
-    font-weight: bold;
-    margin-bottom: 0;
-    margin-top: 10px;
+h1 {
+  font-family: Bookman, sans-serif;
+  font-size: 36pt;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 10px;
 }
 
 h2{
-    color: var(--accent);
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 2.5em;
-    font-weight: lighter;
+  color: var(--accent);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+  font-weight: lighter;
 }
 
 a {
-    color: #7A7C80;
-    text-decoration: none;
+  color: var(--light-grey);
+  text-decoration: none;
 }
 
 ul {
-    display: inline-block;
-    font-size: 1.2rem;
-    list-style-type: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  list-style-type: none;
 }
 
 li {
@@ -93,7 +93,7 @@ img.resize {
 }
 
 #topline h1 {
-    font-family: 'Red Hat Text', sans-serif;
+  font-family: 'Red Hat Text', sans-serif;
 }
 
 #topline a:hover {
@@ -102,8 +102,8 @@ img.resize {
 }
 
 .sub-title {
-    font-family: 'Courgette', cursive;
-    font-size: 1.2rem;
+  font-family: 'Courgette', cursive;
+  font-size: 1.2rem;
 }
 
 #about {
@@ -113,7 +113,7 @@ img.resize {
   grid-template-columns: 50% 50%;
   padding: 2rem 0;
   grid-gap: 1.5rem;
-  color: #7A7C80;
+  color: var(--light-grey);
   text-align: left;
   font-size: 14pt;
   align-items: center;
@@ -128,17 +128,17 @@ img.resize {
 }
 
 .quote-block {
-    font-size: 32pt;
+  font-size: 32pt;
 }
 
 #contact {
-    width: 70%;
-    margin: auto; 
-    color: #7A7C80;
-    text-align: left;
-    font-size: 14pt;
-    height: auto;
-    padding-bottom: 7.5%;
+  width: 70%;
+  margin: auto; 
+  color: var(--light-grey);
+  text-align: left;
+  font-size: 14pt;
+  height: auto;
+  padding-bottom: 7.5%;
 }
 
 #contact img {
@@ -151,44 +151,44 @@ img.resize {
 }
 
 #testimonials {
-    width: 70%;
-    margin: auto;
-    color: #7A7C80;
-    text-align: left;
-    font-size: 14pt;
-    height: auto;
-    padding: 20px 0;
-    border-top: 1px solid var(--accent);
+  width: 70%;
+  margin: auto;
+  color: var(--light-grey);
+  text-align: left;
+  font-size: 14pt;
+  height: auto;
+  padding: 20px 0;
+  border-top: 1px solid var(--accent);
 }
 
 #testimonials p {
-    margin: 2rem 1rem;
-    line-height: 1.4em;
+  margin: 2rem 1rem;
+  line-height: 1.4em;
 }
 
 #farm-testimonials {
-    width: 70%;
-    margin: auto; 
-    color: #7A7C80;
-    text-align: left;
-    font-size: 14pt;
-    height: auto;
+  width: 70%;
+  margin: auto; 
+  color: var(--light-grey);
+  text-align: left;
+  font-size: 14pt;
+  height: auto;
 }
 
 #farm-testimonials p {
-    margin: 2rem 1rem;
-    line-height: 1.4em;
+  margin: 2rem 1rem;
+  line-height: 1.4em;
 }
 
 .pg-title {
-    width: 70%;
-    margin: auto; 
-    color: #7A7C80;
-    text-align: center;
-    font-size: 14pt;
-    line-height: 1.2;
-    height: auto;
-    padding: 0 0 35px 0;
+  width: 70%;
+  margin: auto; 
+  color: var(--light-grey);
+  text-align: center;
+  font-size: 14pt;
+  line-height: 1.2;
+  height: auto;
+  padding: 0 0 35px 0;
 }
 
 .article-list {
@@ -198,36 +198,35 @@ img.resize {
   grid-template-columns: repeat(1, minmax(320px, 1fr));
   padding: 2rem 0;
   grid-gap: 1rem;
-
 }
 
 .article-list article {
-    background-color: #eee;
-    margin: 0 0 20px 0;
-    padding-right: 10px;
-    overflow: hidden;
+  background-color: #eee;
+  margin: 0 0 20px 0;
+  padding-right: 10px;
+  overflow: hidden;
 }
 
 .article-list article img {
-    float: left;
-    height: auto;
-    width: 180px;
-    object-fit: contain;
-    margin-right: 20px;
-    filter: drop-shadow(2px 2px 0px var(--accent));
+  float: left;
+  height: auto;
+  width: 180px;
+  object-fit: contain;
+  margin-right: 20px;
+  filter: drop-shadow(2px 2px 0px var(--accent));
 }
 
 .ways-wrap {
-    text-align: center;
-    padding-bottom: 35px;
+  text-align: center;
+  padding-bottom: 35px;
 }
 
 .ways {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    grid-gap: 20px;
-    justify-content: center;
-    padding: 0 15%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+  padding: 0 15%;
 }
 
 .ways-item {
@@ -314,10 +313,10 @@ img.resize {
 
 /* Nav styles */
 .organisation {
-    float: right;
-    width: 35%;
-    padding-top: 20vh;
-    text-align: cover;
+  float: right;
+  width: 35%;
+  padding-top: 20vh;
+  text-align: cover;
 }
 
 .top-nav {
@@ -344,9 +343,9 @@ img.resize {
 }
 
 .top-nav .current {
-    color: white;
-    background-color: var(--accent);
-    opacity: 0.5;
+  color: white;
+  background-color: var(--accent);
+  opacity: 0.5;
 }
 
 .grid-container {
@@ -359,27 +358,27 @@ img.resize {
 }
 
 .grid-item {
-    padding: 0 20px 10px 20px;
-    background-color: #eee;
+  padding: 0 20px 10px 20px;
+  background-color: #eee;
 }
 
 .grid-item img {
-    height: 220px;
-    width: 100%;
-    object-fit: contain;
-    filter: drop-shadow(2px 2px 0px var(--accent));
+  height: 220px;
+  width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(2px 2px 0px var(--accent));
 }
 
 /*Set the fonts for inside each article box*/
 .article-title {
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 18pt;
-    font-style: bolder;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 18pt;
+  font-style: bolder;
 }
 
 article a {
-    font-size: 1em;
-    color: black
+  font-size: 1em;
+  color: black
 }
 
 article a:hover {
@@ -389,24 +388,24 @@ article a:hover {
 }
 
 article p {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .pub-title {
-    color: #545454;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-size: 16pt;
-    font-style: italic;
-    font-weight: lighter;
+  color: var(--dark-grey);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 16pt;
+  font-style: italic;
+  font-weight: lighter;
 }
 
 /*For small browser windows */
 @media only screen and (max-width: 900px) {
-   #about, .top-nav, header, footer, 
-   .grid-container, .article-list, .pg-title, 
-   #testimonials, #farm-testimonials {
+  #about, .top-nav, header, footer, 
+  .grid-container, .article-list, .pg-title, 
+  #testimonials, #farm-testimonials {
     width: 100%;
   }
 
