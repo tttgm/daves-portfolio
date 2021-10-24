@@ -115,7 +115,7 @@ img.resize {
   margin: auto;
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
   grid-gap: 1.5rem;
   color: var(--dark-grey);
   text-align: left;
@@ -154,6 +154,10 @@ img.resize {
   object-fit: cover;
 }
 
+#recent-articles {
+  border-bottom: 1px solid var(--accent);
+}
+
 #testimonials {
   width: 70%;
   margin: auto;
@@ -161,8 +165,6 @@ img.resize {
   text-align: left;
   font-size: 14pt;
   height: auto;
-  padding: 20px 0;
-  border-top: 1px solid var(--accent);
 }
 
 #testimonials p {
@@ -192,7 +194,10 @@ img.resize {
   font-size: 14pt;
   line-height: 1.2;
   height: auto;
-  padding: 0 0 35px 0;
+}
+
+.pg-title > img {
+  padding: 10px;
 }
 
 .article-list {
@@ -407,13 +412,22 @@ article p {
 
 /*For small browser windows */
 @media only screen and (max-width: 900px) {
-  #about, .top-nav, header, footer, 
+  #about,
   .grid-container, .article-list, .pg-title, 
   #testimonials, #farm-testimonials {
     width: 100%;
   }
 
+  .top-nav, header, footer {
+    width: 95%;
+  }
+
+  body > header {
+    margin-left: 2.5%;
+  }
+
   #about {
+    padding: 1rem 0;
     grid-template-columns: 100%;
   }
 
@@ -422,7 +436,7 @@ article p {
   }
 
   #about p {
-    margin: 0 10px;
+    margin: 10px;
   }
 
   .pg-title p {
@@ -438,13 +452,22 @@ article p {
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {
-     #about, .top-nav, header, footer, 
-   .grid-container, .article-list, .pg-title, 
-   #testimonials, #farm-testimonials {
+  #about,
+  .grid-container, .article-list, .pg-title, 
+  #testimonials, #farm-testimonials {
     width: 100%;
   }
 
+  .top-nav, header, footer {
+    width: 95%;
+  }
+
+  body > header {
+    margin-left: 2.5%;
+  }
+
   #about {
+    padding: 1rem 0;
     grid-template-columns: 100%;
   }
 
