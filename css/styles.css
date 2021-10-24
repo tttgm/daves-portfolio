@@ -1,8 +1,9 @@
 :root {
   --dark-text: #020f04;
   --dark-grey: #555a56;
-  --light-grey: #aaafab; 
-  --accent: green;
+  --light-grey: #aaafab;
+  --accent: #5f773e;
+  --accent-dark: #274213;
 }
 
 body, html {
@@ -23,7 +24,7 @@ footer {
     font-style: normal;
     width: 70%;
     margin: auto;    
-    border-top: 3px solid green;
+    border-top: 1px solid var(--accent);
     padding: 5px 0;
 }
 
@@ -36,7 +37,7 @@ h1{
 }
 
 h2{
-    color: green;
+    color: var(--accent);
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 2.5em;
     font-weight: lighter;
@@ -67,7 +68,7 @@ ul li {
 
 ul a:hover {
   background-color: #eee;
-  color: green;
+  color: var(--accent);
   transition: 0.3s;
 }
 
@@ -92,7 +93,7 @@ img.resize {
 }
 
 #topline a:hover {
-  color: green;
+  color: var(--accent);
   transition: 0.3s;
 }
 
@@ -112,7 +113,7 @@ img.resize {
   text-align: left;
   font-size: 14pt;
   align-items: center;
-  border-bottom: 3px solid green;
+  border-bottom: 1px solid var(--accent);
 }
 
 #about img {
@@ -153,7 +154,7 @@ img.resize {
     font-size: 14pt;
     height: auto;
     padding: 20px 0;
-    border-top: 3px solid green;
+    border-top: 1px solid var(--accent);
 }
 
 #testimonials p {
@@ -320,8 +321,8 @@ img.resize {
   text-align: center;
   width: 70%;
   border-style: solid;
-  border-color: green;
-  border-width: 3px 0;
+  border-color: var(--accent);
+  border-width: 1px 0;
 }
 
 .top-nav a {
@@ -333,14 +334,14 @@ img.resize {
 
 .top-nav a:hover {
   background-color: #eee;
-  color: green;
+  color: var(--accent);
   transition: 0.3s;
 }
 
 .top-nav .current {
     color: white;
-    background-color: green;
-    opacity: 0.3;
+    background-color: var(--accent);
+    opacity: 0.5;
 }
 
 .grid-container {
@@ -377,7 +378,7 @@ article a {
 
 article a:hover {
   background-color: #fff;
-  color: green;
+  color: var(--accent);
   transition: 0.3s;
 }
 
