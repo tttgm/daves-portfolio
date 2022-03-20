@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stone Soup</title>
+        <link href="css/styles.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    </head>
+    <body>
+        <header id="topline">
+            <h1>David McKenzie</h1>
+            <h3>Freelance food writer and farmhand</h3>
+            <div class="social-icons">
+                <a href="https://twitter.com/eatsnleaves"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/eatsnleaves/"><i class="fab fa-instagram"></i></a>
+            </div> 
+        </header>
+        <nav class="top-nav">
+            <a href="./">Home</a>
+            <a href="contemporary-food-lab.html">Contemporary Food Lab</a>
+            <a href="slow-food.html">Slow Food</a>
+            <a href="sustainable-food-trust.html">Sustainable Food Trust</a>
+            <a class="current" href="13-ways.html">13 Ways</a>
+            <a href="farmhand.html">Farmhand</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <section class="pg-title">
+            <h2>Stone Soup</h2>
+            <p>This not-for-profit, grassroots publication, which is given out for free, highlights often-ignored issues in food around Aotearoa New Zealand, as well as highlighting people trying to do things in a better way, or to address these issues. </p>
+            <p>I strongly associate with the goals and philosophy of Stone Soup, and I attempt to collaborate with them and their broader pool of contributors whenever I can, not only in terms of publishing articles but other local food- and community-focused projects. </p>
+        </section>
+        <section class="ways-wrap">
+            <div class="ways">
+                <a href="https://stonesoupsyndicate.com/features/fill-a-basket/" class="ways-item ways-prawn">
+                    <p>Fill a Basket</p>
+                </a>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; David McKenzie 2020</p>
+        </footer>
+    </body>
+</html>
