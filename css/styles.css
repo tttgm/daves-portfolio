@@ -18,12 +18,8 @@ body, html {
   width: 100%;
 }
 
-body > header {
-  margin-left: 15%;
-}
-
 header {
-  text-align: left;
+  text-align: center;
 }
 
 hr {
