@@ -26,6 +26,13 @@ header {
   text-align: left;
 }
 
+hr {
+  height: 1px;
+  background-color: var(--accent);
+  border: none;
+  width: 70%;
+}
+
 footer {
   text-align: left;
   font-style: normal;
@@ -228,6 +235,7 @@ img.resize {
   background-color: #eee;
   margin: 0 0 20px 0;
   padding-right: 10px;
+  padding-left: 5px;
   overflow: hidden;
 }
 
