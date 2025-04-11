@@ -1,0 +1,18 @@
+<nav class="top-nav">
+    <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
+    
+    <div class="dropdown">
+        <a class="dropdown-trigger">
+            Projects <span class="dropdown-arrow">▾</span>
+        </a>
+        <div class="dropdown-content">
+            <a href="/contemporary-food-lab/">Contemporary Food Lab</a>
+            <a href="/sustainable-food-trust/">Sustainable Food Trust</a>
+            <a href="/slow-food/">Slow Food</a>
+            <a href="/stone-soup/">Stone Soup</a>
+        </div>
+    </div>
+    
+    <a href="/farmhand/" {% if page.url == "/farmhand/" %}class="active"{% endif %}>Farmhand</a>
+    <a href="/contact/" {% if page.url == "/contact/" %}class="active"{% endif %}>Contact</a>
+</nav>

@@ -30,7 +30,7 @@ hr {
 }
 
 footer {
-  text-align: left;
+  text-align: center;
   font-style: normal;
   width: 70%;
   margin: auto;    
@@ -129,7 +129,7 @@ img.resize {
 }
 
 #about {
-  width: 70%;
+  /* width: 70%; */
   margin: auto;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -177,7 +177,7 @@ img.resize {
 }
 
 #testimonials {
-  width: 70%;
+  /* width: 70%; */
   margin: auto;
   color: var(--dark-grey);
   text-align: left;
@@ -191,7 +191,7 @@ img.resize {
 }
 
 #farm-testimonials {
-  width: 70%;
+  /* width: 70%; */
   margin: auto; 
   color: var(--dark-grey);
   text-align: left;
@@ -348,13 +348,12 @@ img.resize {
 }
 
 .top-nav {
-  overflow: hidden;
-  margin: auto;
-  text-align: center;
-  width: 70%;
-  border-style: solid;
-  border-color: var(--accent);
-  border-width: 1px 0;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;  /* Center horizontally */
+  width: 100%;             /* Ensure full width */
+  padding: 1rem 0;         /* Add some vertical spacing */
 }
 
 .top-nav a {
@@ -362,6 +361,7 @@ img.resize {
   text-align: center;
   padding: 20px 10px;
   text-decoration: none;
+  position: relative;
 }
 
 .top-nav a:hover {
@@ -374,6 +374,22 @@ img.resize {
   color: white;
   background-color: var(--accent);
   opacity: 0.5;
+}
+
+.top-nav a.active {
+  color: #000;
+  font-weight: bold;
+}
+
+/* Add an underline effect for the active page */
+.top-nav a.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  left: 0;
+  bottom: -2px;
 }
 
 .grid-container {
@@ -503,4 +519,71 @@ and (max-device-width : 667px) {
   .article-list article {
     padding-left: 10px
   }
+}
+
+.container {
+  margin: auto;
+  max-width: 800px;  /* adjust this value to match your index page */
+  padding: 0 2rem;    /* adds some breathing room on smaller screens */
+}
+
+/* Make sure images don't overflow their containers */
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+/* Dropdown styles */
+.top-nav .dropdown {
+    position: relative;
+}
+
+.top-nav .dropdown-trigger {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.top-nav .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    padding: 8px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+/* Important: Make sure links in dropdown are visible */
+.top-nav .dropdown-content a {
+    display: block;
+    padding: 8px 16px;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Show the dropdown */
+.top-nav .dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Visual feedback for dropdown items */
+.top-nav .dropdown-content a:hover {
+    background-color: #f5f5f5;
+}
+
+/* Arrow styling */
+.top-nav .dropdown-arrow {
+    display: inline-block;
+    margin-left: 4px;
 }
