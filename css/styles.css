@@ -237,8 +237,11 @@ img.resize {
   padding: 10px;
 }
 
+.pg-title > h2 {
+  margin-top: 1rem;
+}
+
 .article-list {
-  width: 65%;
   margin: auto; 
   display: grid;
   grid-template-columns: repeat(1, minmax(320px, 1fr));
@@ -247,11 +250,18 @@ img.resize {
 }
 
 .article-list article {
-  background-color: #eee;
   margin: 0 0 20px 0;
-  padding-right: 10px;
-  padding-left: 5px;
+  padding: 0 10px 0 15px;
   overflow: hidden;
+  border-left: 4px solid var(--accent);
+}
+
+.article-list article p {
+  margin: 10px 0;
+}
+
+.article-list article p:last-of-type {
+  margin-bottom: 0;
 }
 
 .article-list article img {
@@ -492,7 +502,7 @@ article p {
   }
 
   .pg-title p {
-    margin: 0 10px;
+    margin: 10px;
   }
 
   .article-list article {
@@ -532,7 +542,7 @@ and (max-device-width : 667px) {
   }
 
   .pg-title p {
-    margin: 0 10px;
+    margin: 10px;
   }
   
   .article-list article {
