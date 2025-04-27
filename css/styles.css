@@ -121,11 +121,6 @@ img.resize {
   margin: 0 auto;
 }
 
-/* #topline h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--dark-text)
-} */
-
 #topline h3 {
   font-family: 'Zen Old Mincho', Georgia, serif;
   color: var(--dark-grey);
@@ -168,7 +163,7 @@ img.resize {
   object-fit: cover;
 }
 
-.quote-block {
+#quote-block {
   font-size: 32pt;
 }
 
@@ -489,7 +484,7 @@ article p {
     margin-left: 2.5%;
   }
 
-  p {
+  .container p {
     font-size: 1.4rem;
     line-height: 1.4;
   }
@@ -525,8 +520,65 @@ article p {
   }
 }
 
+@media only screen and (max-device-width: 767px) {
+  /* CSS rules for mobile devices (phones) */
+  body, html {
+    font-weight: 400;
+  }
+
+  #about,
+  .grid-container, .article-list, .pg-title, 
+  #testimonials, #farm-testimonials {
+    width: 100%;
+  }
+
+  #topline {
+    width: 100%;
+  }
+
+  .top-nav, header, footer {
+    width: 100%;
+  }
+
+  .top-nav {
+    margin: auto;
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  #quote-block {
+    font-size: 32pt;
+  }
+
+  .container p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  #about {
+    padding: 1rem 0;
+    grid-template-columns: 100%;
+  }
+
+  #about img {
+    width: 100%;
+  }
+
+  #about p {
+    margin: 0 10px;
+  }
+
+  .pg-title p {
+    margin: 10px;
+  }
+  
+  .article-list article {
+    padding-left: 10px
+  }
+}
+
 /*For iphones 6,7, and 8*/
-@media only screen 
+/* @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {
   #about,
@@ -572,7 +624,7 @@ and (max-device-width : 667px) {
   .article-list article {
     padding-left: 10px
   }
-}
+} */
 
 .container {
   margin: auto;
@@ -584,13 +636,6 @@ and (max-device-width : 667px) {
 .container img {
     max-width: 100%;
     height: auto;
-}
-
-/* Responsive adjustment */
-@media (max-width: 768px) {
-    .container {
-        padding: 0 1rem;
-    }
 }
 
 /* Dropdown styles */
