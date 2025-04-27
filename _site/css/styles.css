@@ -379,6 +379,7 @@ img.resize {
 .top-nav {
   display: flex;
   gap: 0;
+  font-size: 1.2rem;
   align-items: center;
   justify-content: center;  /* Center horizontally */
   width: 100%;             /* Ensure full width */
@@ -488,6 +489,11 @@ article p {
     margin-left: 2.5%;
   }
 
+  p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
   #about {
     padding: 1rem 0;
     grid-template-columns: 100%;
@@ -499,6 +505,15 @@ article p {
 
   #about p {
     margin: 10px;
+  }
+
+  .top-nav {
+    width: 90%;
+    margin: auto;
+  }
+
+  .top-nav > a, .dropdown-trigger, .dropdown-content > a {
+    font-size: 1.4rem;
   }
 
   .pg-title p {
@@ -526,6 +541,15 @@ and (max-device-width : 667px) {
 
   body > header {
     margin-left: 2.5%;
+  }
+
+  .top-nav {
+    width: 90%;
+    margin: auto;
+  }
+
+  .top-nav > a, .dropdown-trigger, .dropdown-content > a {
+    font-size: 1.4rem;
   }
 
   #about {
