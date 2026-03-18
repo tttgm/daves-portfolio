@@ -12,4 +12,14 @@ module.exports = function(eleventyConfig) {
         templateFormats: ["njk", "md", "html"],
         htmlTemplateEngine: "njk"
     };
-}; 
+};
+
+module.exports = async function (eleventyConfig) {
+    const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
+  // necessary to automatically prepend the prefix to internal links
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+  return {
+    // prefix used by GitHub Pages, usually your project name
+    pathPrefix: "/daves-portfolio/"
+  }
+};
