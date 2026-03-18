@@ -5,7 +5,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "build": "eleventy",
-    "build-ghpages": "npx @11ty/eleventy --pathprefix 'daves-portfolio'",
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=daves-portfolio",
     "serve": "eleventy --serve"
   },
   "keywords": [],
