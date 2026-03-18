@@ -15,11 +15,11 @@ module.exports = function(eleventyConfig) {
 };
 
 module.exports = async function (eleventyConfig) {
-    const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
-  // necessary to automatically prepend the prefix to internal links
-  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-  return {
-    // prefix used by GitHub Pages, usually your project name
-    pathPrefix: "/daves-portfolio/"
-  }
+	const { HtmlBasePlugin } = await import("@11ty/eleventy");
+
+	eleventyConfig.addPlugin(HtmlBasePlugin);
 };
+
+module.exports.config = {
+	pathPrefix: "/daves-portfolio/",
+}
