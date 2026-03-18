@@ -13,13 +13,3 @@ module.exports = function(eleventyConfig) {
         htmlTemplateEngine: "njk"
     };
 };
-
-module.exports = async function (eleventyConfig) {
-	const { HtmlBasePlugin } = await import("@11ty/eleventy");
-
-	eleventyConfig.addPlugin(HtmlBasePlugin);
-};
-
-module.exports.config = {
-	pathPrefix: "/daves-portfolio/",
-}
