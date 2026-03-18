@@ -1,0 +1,716 @@
+/* import google fonts for the topline headers */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&family=Zilla+Slab+Highlight&display=swadisplay=swap');
+
+:root {
+  --dark-text: #020f04;
+  --dark-grey: #555a56;
+  --light-grey: #aaafab;
+  --accent: #5f773e;
+  --accent-dark: #274213;
+  --header-bg: #f0f4ed;  /* New less saturated green color */
+}
+
+.oregano-regular {
+  font-family: "Oregano", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oregano-regular-italic {
+  font-family: "Oregano", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+body, html {
+  padding: 0;
+  margin: auto;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 200;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  background-color: var(--header-bg);
+  margin: 0;
+  padding: 1rem 0;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--accent);
+  border: none;
+  width: 70%;
+}
+
+footer {
+  text-align: center;
+  font-style: normal;
+  width: 70%;
+  margin: auto;    
+  border-top: 1px solid var(--accent);
+  padding: 5px 0;
+}
+
+h1 {
+  font-family: Bookman, sans-serif;
+  font-size: 36pt;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+h2 {
+  color: var(--accent);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+a {
+  color: var(--dark-grey);
+  text-decoration: none;
+}
+
+ul {
+  display: inline-block;
+  font-size: 1.2rem;
+  list-style-type: none;
+}
+
+li {
+  margin: 15px 0;
+}
+
+ul li {
+  padding-left: 2rem;
+  background-image: url(../images/spoon.png);
+  background-position: 0 0;
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat;
+}
+
+ul a:hover {
+  background-color: #eee;
+  color: var(--accent);
+  transition: 0.3s;
+}
+
+img.resize {
+  max-width:50%;
+  max-height:50%;
+}
+
+.img-sepia {
+  filter: sepia(50%);
+}
+
+#title-logo {
+  max-width: 100%;
+}
+
+#topline {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#topline h3 {
+  font-family: 'Zen Old Mincho', Georgia, serif;
+  color: var(--dark-grey);
+  font-weight: normal;
+  margin: 5px 0;
+}
+
+#topline a:hover {
+  color: var(--accent);
+  transition: 0.3s;
+}
+
+.social-icons > a {
+  padding-right: 5px;
+}
+
+.sub-title {
+  font-family: 'Zen Old Mincho', Georgia, serif;
+  font-size: 1.2rem;
+}
+
+#about {
+  /* width: 70%; */
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-bottom: 2rem;
+  grid-gap: 1.5rem;
+  color: var(--dark-grey);
+  text-align: left;
+  font-size: 14pt;
+  align-items: center;
+  border-bottom: 1px solid var(--accent);
+}
+
+#about img {
+  width: 95%;
+  height: 350px;
+  filter: sepia(50%);
+  object-fit: cover;
+}
+
+#quote-block {
+  font-size: 32pt;
+}
+
+#contact {
+  width: 70%;
+  margin: auto; 
+  color: var(--dark-grey);
+  text-align: left;
+  font-size: 14pt;
+  height: auto;
+  padding-bottom: 7.5%;
+}
+
+#contact img {
+  float: right;
+  margin-left: 50px;
+  width: 40%;
+  height: 200px;
+  filter: sepia(50%);
+  object-fit: cover;
+}
+
+#recent-articles {
+  border-bottom: 1px solid var(--accent);
+}
+
+#testimonials {
+  /* width: 70%; */
+  margin: auto;
+  color: var(--dark-grey);
+  text-align: left;
+  font-size: 14pt;
+  height: auto;
+}
+
+#testimonials p {
+  margin: 2rem 1rem;
+  line-height: 1.4em;
+}
+
+#farm-testimonials {
+  /* width: 70%; */
+  margin: auto; 
+  color: var(--dark-grey);
+  text-align: left;
+  font-size: 14pt;
+  height: auto;
+}
+
+#farm-testimonials p {
+  margin: 2rem 1rem;
+  line-height: 1.4em;
+}
+
+.pg-title {
+  width: 70%;
+  margin: auto; 
+  color: var(--dark-grey);
+  text-align: center;
+  font-size: 14pt;
+  line-height: 1.2;
+  height: auto;
+}
+
+.pg-title > img {
+  padding: 10px;
+}
+
+.pg-title > h2 {
+  margin-top: 1rem;
+}
+
+.article-list {
+  margin: auto; 
+  display: grid;
+  grid-template-columns: repeat(1, minmax(320px, 1fr));
+  padding: 2rem 0;
+  grid-gap: 1rem;
+}
+
+.article-list article {
+  margin: 0 0 20px 0;
+  padding: 0 10px 0 15px;
+  overflow: hidden;
+  border-left: 4px solid var(--accent);
+}
+
+.article-list article p {
+  margin: 10px 0;
+}
+
+.article-list article p:last-of-type {
+  margin-bottom: 0;
+}
+
+.article-list article img {
+  float: left;
+  height: auto;
+  width: 180px;
+  object-fit: contain;
+  margin-right: 20px;
+  filter: drop-shadow(2px 2px 0px var(--accent));
+}
+
+.ways-wrap {
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+.ways {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+  padding: 0 15%;
+}
+
+.ways-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  opacity: 0.5;
+  background: yellow;
+}
+
+.ways-item:hover {
+  opacity: 0.8;
+  transition-duration: 0.5s;
+}
+
+.ways-item > p {
+  color: var(--accent);
+  font-size: larger;
+  background: #fff;
+  margin: 0 15px;
+}
+
+/* 13 Ways background images */
+.ways-prawn {
+  background: url("../images/13ways/prawn.jpg") no-repeat;
+  background-size: cover;
+}
+
+.ways-cucumber {
+  background: url("../images/13ways/cucumber.jpg") no-repeat;
+  background-size: cover;
+}
+
+.ways-potato {
+  background: url("../images/13ways/potato.jpg") no-repeat;
+  background-size: cover;
+}
+
+.ways-olive {
+  background: url("../images/13ways/olives.jpg") no-repeat;
+  background-size: cover;
+}
+
+.ways-carrot {
+  background: url("../images/13ways/carrot.jpg") no-repeat;
+  background-size: cover;
+}
+
+.ways-tomato {
+  background: url("../images/13ways/tomato.jpg") no-repeat;
+  background-size: cover;
+}
+
+.ways-coffee {
+  background: url("../images/13ways/coffee.jpg") no-repeat;
+  background-size: cover;
+}
+
+.ways-apple {
+  background: url("../images/13ways/apple.jpg") no-repeat;
+  background-size: cover;
+}
+
+.ways-chicken {
+  background: url("../images/13ways/chicken.jpg") no-repeat;
+  background-size: cover;
+}
+
+.ways-onion {
+  background: url("../images/13ways/onion.jpg") no-repeat;
+  background-size: cover;
+}
+
+.ways-honey {
+  background: url("../images/13ways/honey.jpg") no-repeat;
+  background-size: cover;
+}
+
+.ways-bean {
+  background: url("../images/13ways/beans.jpg") no-repeat;
+  background-size: cover;
+}
+
+/* Nav styles */
+.organisation {
+  float: right;
+  width: 35%;
+  padding-top: 20vh;
+  text-align: cover;
+}
+
+.top-nav {
+  display: flex;
+  gap: 0;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;  /* Center horizontally */
+  width: 100%;             /* Ensure full width */
+  padding: 2rem 0 1rem 0;         /* Add some vertical spacing */
+}
+
+.top-nav a {
+  display: inline-block;
+  text-align: center;
+  padding: 20px 10px;
+  text-decoration: none;
+  position: relative;
+}
+
+.top-nav a:hover {
+  background-color: #eee;
+  color: var(--accent);
+  transition: 0.3s;
+}
+
+.top-nav .current {
+  color: white;
+  background-color: var(--accent);
+  opacity: 0.5;
+}
+
+.top-nav a.active {
+  color: #000;
+  font-weight: bold;
+}
+
+/* Add an underline effect for the active page */
+.top-nav a.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  left: 0;
+  bottom: -2px;
+}
+
+.grid-container {
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding: 2rem 0;
+  grid-gap: 1.5rem;
+}
+
+.grid-item {
+  padding: 0 20px 10px 20px;
+  background-color: #eee;
+}
+
+.grid-item img {
+  height: 220px;
+  width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(2px 2px 0px var(--accent));
+}
+
+/*Set the fonts for inside each article box*/
+.article-title {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 18pt;
+  font-style: bolder;
+}
+
+article a {
+  font-size: 1em;
+  color: black
+}
+
+article a:hover {
+  background-color: #fff;
+  color: var(--accent);
+  transition: 0.3s;
+}
+
+article p {
+  overflow: hidden;
+}
+
+.pub-title {
+  color: var(--dark-grey);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16pt;
+  font-weight: lighter;
+}
+
+/*For small browser windows */
+@media only screen and (max-width: 900px) {
+  #about,
+  .grid-container, .article-list, .pg-title, 
+  #testimonials, #farm-testimonials {
+    width: 100%;
+  }
+
+  .top-nav, header, footer {
+    width: 95%;
+  }
+
+  body > header {
+    margin-left: 2.5%;
+  }
+
+  .container p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  #about {
+    padding: 1rem 0;
+    grid-template-columns: 100%;
+  }
+
+  #about img{
+    width: 100%;
+  }
+
+  #about p {
+    margin: 10px;
+  }
+
+  .top-nav {
+    width: 90%;
+    margin: auto;
+  }
+
+  .top-nav > a, .dropdown-trigger, .dropdown-content > a {
+    font-size: 1.4rem;
+  }
+
+  .pg-title p {
+    margin: 10px;
+  }
+
+  .article-list article {
+    padding-left: 10px
+  }
+}
+
+@media only screen and (max-device-width: 767px) {
+  /* CSS rules for mobile devices (phones) */
+  body, html {
+    font-weight: 400;
+  }
+
+  #about,
+  .grid-container, .article-list, .pg-title, 
+  #testimonials, #farm-testimonials {
+    width: 100%;
+  }
+
+  #topline {
+    width: 100%;
+  }
+
+  .top-nav, header, footer {
+    width: 100%;
+  }
+
+  .top-nav {
+    margin: auto;
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  #quote-block {
+    font-size: 32pt;
+  }
+
+  .container p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  #about {
+    padding: 1rem 0;
+    grid-template-columns: 100%;
+  }
+
+  #about img {
+    width: 100%;
+  }
+
+  #about p {
+    margin: 0 10px;
+  }
+
+  .pg-title p {
+    margin: 10px;
+  }
+  
+  .article-list article {
+    padding-left: 10px
+  }
+}
+
+/*For iphones 6,7, and 8*/
+/* @media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+  #about,
+  .grid-container, .article-list, .pg-title, 
+  #testimonials, #farm-testimonials {
+    width: 100%;
+  }
+
+  .top-nav, header, footer {
+    width: 95%;
+  }
+
+  body > header {
+    margin-left: 2.5%;
+  }
+
+  .top-nav {
+    width: 90%;
+    margin: auto;
+  }
+
+  .top-nav > a, .dropdown-trigger, .dropdown-content > a {
+    font-size: 1.4rem;
+  }
+
+  #about {
+    padding: 1rem 0;
+    grid-template-columns: 100%;
+  }
+
+  #about img{
+    width: 100%;
+  }
+
+  #about p {
+    margin: 0 10px;
+  }
+
+  .pg-title p {
+    margin: 10px;
+  }
+  
+  .article-list article {
+    padding-left: 10px
+  }
+} */
+
+.container {
+  margin: auto;
+  max-width: 800px;  /* adjust this value to match your index page */
+  padding: 0 2rem;    /* adds some breathing room on smaller screens */
+}
+
+/* Make sure images don't overflow their containers */
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Dropdown styles */
+.top-nav .dropdown {
+    position: relative;
+}
+
+.top-nav .dropdown-trigger {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.top-nav .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+    z-index: 1000;
+    border-radius: 4px;
+    overflow: hidden;
+    line-height: 1;
+}
+
+/* Important: Make sure links in dropdown are visible */
+.top-nav .dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: inherit;
+    text-decoration: none;
+    margin: 0;
+    background: white;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+.top-nav .dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+/* Show the dropdown */
+.top-nav .dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Visual feedback for dropdown items */
+.top-nav .dropdown-content a:hover {
+    background-color: #f5f5f5;
+}
+
+/* Arrow styling */
+.top-nav .dropdown-arrow {
+    display: inline-block;
+    margin-left: 4px;
+}
+
+/* Style all nav items consistently (including dropdown trigger) */
+.top-nav > a,
+.top-nav .dropdown-trigger {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 2px;  /* Optional: if you want rounded corners */
+}
+
+/* Consistent hover effect for all nav items */
+.top-nav > a:hover,
+.top-nav .dropdown-trigger:hover,
+.top-nav > a.active,
+.top-nav .dropdown-trigger.active {
+    background-color: var(--header-bg);  /* Use your preferred hover color */
+}
