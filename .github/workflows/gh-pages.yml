@@ -18,17 +18,17 @@ jobs:
 
     steps:
       # checkout the branch
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
 
       # install the project and to build the page
       - name: npm ci & build
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
       - run: npm ci
       - run: npm npx @11ty/eleventy
 
       # deploy the content of _site to the branch gh-pages (default setting)
       - name: deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           # this line is needed for the action to be able to push something to your repository
           github_token: ${{ secrets.GITHUB_TOKEN }}
