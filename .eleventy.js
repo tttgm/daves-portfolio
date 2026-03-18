@@ -14,12 +14,12 @@ module.exports = function(eleventyConfig) {
     };
 };
 
-// module.exports = async function (eleventyConfig) {
-// 	const { HtmlBasePlugin } = await import("@11ty/eleventy");
+module.exports = async function (eleventyConfig) {
+	const { HtmlBasePlugin } = await import("@11ty/eleventy");
 
-// 	eleventyConfig.addPlugin(HtmlBasePlugin);
-// };
+	eleventyConfig.addPlugin(HtmlBasePlugin);
+};
 
-// module.exports.config = {
-// 	pathPrefix: "/daves-portfolio/",
-// }
+module.exports.config = {
+	pathPrefix: "/daves-portfolio/",
+}
